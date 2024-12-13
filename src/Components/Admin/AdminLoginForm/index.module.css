@@ -1,0 +1,66 @@
+/* Common styles */
+.resize_image {
+  width: auto;
+}
+
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) {
+  .resize_image {
+    height: 40px;
+    width: 150px;
+  }
+}
+
+/* Portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide */
+@media (min-width: 481px) {
+  .resize_image {
+    height: 40px;
+    width: 150px;
+  }
+}
+
+/* Portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) {
+  .resize_image {
+    height: 40px;
+    width: 140px;
+  }
+}
+
+/* Tablet, landscape iPad, lo-res laptops and desktops */
+@media (min-width: 961px) {
+  .resize_image {
+    height: 40px;
+    width: 150px;
+  }
+}
+
+/* Big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) {
+  .resize_image {
+    width: 150px;
+  }
+}
+
+/* Hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .resize_image {
+    width: 150px;
+  }
+}
+
+.login_welcome {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: ubuntu;
+}
+
+.login_img {
+  color: #989da3;
+}
+
+.normal_text {
+  font-size: 14px;
+  color: #000000;
+  padding-top: 10px;
+}

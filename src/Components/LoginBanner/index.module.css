@@ -1,0 +1,267 @@
+.bannerContainer {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .leftSection {
+    flex: 3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .contentWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .blurredTextBackground {
+    position: absolute;
+      top: 101px;
+      left: 200px;
+      width: 300px;
+      height: 500px;
+      background: rgba(255, 255, 255, 0.2);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: left;
+  }
+  
+  .textTitle {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .textDescription {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .womanImage {
+    position: absolute;
+      bottom: -20px;
+      left: 20px;
+      width: 353px;
+      z-index: 1;
+  }
+  
+  .rightSection {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 0 15px 15px 0;
+  }
+  
+  .loginForm {
+    width: 100%;
+    max-width: 400px;
+    /* text-align: center; */
+  }
+  
+  .logo {
+    width: 250px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .welcomeText {
+    font-size: 24px;
+    color: #a32424;
+    margin-bottom: 10px;
+  }
+  
+  .loginPrompt {
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .loginForm form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm input {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .rememberSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .forgotPassword {
+    color: #a32424;
+    text-decoration: none;
+  }
+  
+  .loginButton {
+    padding: 12px;
+    background-color: #ffb300;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .loginButton:hover {
+    background-color: #ff9900;
+  }
+  
+  /* Container for input fields to position icons */
+  .inputContainer {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  /* Icon positioning for each input */
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+  }
+  
+  /* Input field styling */
+  .loginForm input {
+    width: 100%;
+    padding: 15px;
+    padding-left: 45px; /* Adjusted for icon space */
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Button styling */
+  .loginButton {
+    padding: 15px;
+    background-color: #ffb300;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .loginButton:hover {
+    background-color: #ff9900;
+  }
+  
+  
+  
+  
+  
+/* RESPONSIVE DESIGN */
+/* For Mobile Browsers */
+@media (max-width: 768px) {
+    .bannerContainer {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .leftSection {
+      flex: none;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  
+    .womanImage {
+      position: static;
+      width: 80%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  
+    .blurredTextBackground {
+      display: none;
+    }
+  
+    .rightSection {
+      width: 100%;
+      border-radius: 0;
+      padding: 15px;
+    }
+  
+    .loginForm {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .welcomeText {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .loginPrompt {
+      text-align: center;
+    }
+  
+    .loginForm input {
+      font-size: 14px;
+      padding: 10px;
+      padding-left: 40px; /* Adjusted padding for icon */
+    }
+  
+    .inputContainer {
+      position: relative;
+      margin: 10px 0;
+    }
+  
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      font-size: 16px; /* Adjust icon size for smaller screens */
+      color: #888;
+    }
+  
+    .rememberSection {
+      display: flex;
+      justify-content: space-between; /* Ensure "Remember Me" and "Forgot Password" are on the same line */
+      align-items: center;
+      font-size: 14px;
+      margin: 10px 0;
+      gap: 10px; /* Add gap between the two items */
+    }
+  
+    .forgotPassword {
+      color: #a32424;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  
+    .loginButton {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  

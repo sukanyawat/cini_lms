@@ -1,0 +1,116 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+:root {
+  --color-primary: #5c99f4;
+  --color-primary-extralight: #d7d5f8;
+  --color-primary-light: #4239c0;
+  --color-secondary: #f97316;
+  --color-light-grey: #eeeaea;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+.ant-btn-primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  font-size: 14px;
+  height: 38px;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.ant-btn-primary:not(:disabled):hover:focus {
+  color: var(--color-white) !important;
+  background-color: var(--color-primary) !important;
+  font-size: 14px;
+  height: 38px;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.ant-btn-default {
+  color: var(--color-primary) !important;
+  background-color: var(--color-white) !important;
+  border: 2px solid var(--color-primary) !important;
+  font-size: 14px;
+  height: 38px;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.ant-btn-default:not(:disabled):hover:focus {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  border: 2px solid var(--color-primary) !important;
+  font-size: 14px;
+  height: 38px;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* This CSS targets only the selected menu items in a vertical Ant Design Menu */
+.ant-menu-vertical .ant-menu-item-selected {
+  /* background-color: var(--color-primary) !important; */
+  background-color: #b7a26a !important;
+  border-radius: 3px !important;
+}
+
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none !important;
+  transition: none !important;
+}
+
+.ant-spin {
+  max-height: 100% !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: var(--color-primary) !important;
+}
+.ant-pagination .ant-pagination-item-active {
+  border-color: var(--color-primary) !important;
+}
+
+.ant-input-affix-wrapper {
+  border-radius: 0px !important;
+}
+
+.ant-menu-dark .ant-menu-item {
+  color: #fff !important;
+}

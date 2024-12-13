@@ -1,0 +1,126 @@
+.home_tab {
+    height: 38px;
+    color: #888888;
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  .header {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+  
+  .data_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .data_main_container > div {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 3px dashed #68749e;
+    padding: 30px 50px;
+    background-color: rgba(104, 116, 158, 0.05);
+  }
+  
+  .no_data_text {
+    font-size: 18px;
+    color: #666666;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  
+  .custom_card.ant-card-head {
+    padding: 0px;
+    border-radius: 0px;
+  }
+  
+  .box_one {
+    height: 250px;
+    padding: 26px;
+    object-fit: cover;
+    /* background: #728a7c; */
+  }
+  
+  
+  
+  .latest_ebook_title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  /* .customNewReleaseTab {
+    width: 119px;
+    height: 38px;
+    top: 68px;
+    left: 460px;
+    gap: 0px;
+    opacity: 0px;
+  
+  } */
+  
+  .customNewReleaseTab .ant-tabs-tab {
+    border: 1px solid #8B3A3A; /* Dark red border */
+    color: #8B3A3A; /* Dark red text */
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .customNewReleaseTab .ant-tabs-tab-active .ant-tabs-tab-btn {
+    background-color: #8B3A3A; /* Dark red background */
+    color: white !important; /* White text */
+    border: 1px solid #8B3A3A; /* Dark red border */
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Style for active tab pane content */
+  .customNewReleaseTab .ant-tabs-tab-btn {
+    background-color: #F5F5F5; /* Light gray background for active content */
+    padding: 16px; /* Add padding to content area */
+    border-radius: 8px; /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better focus */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .customNewReleaseTab .ant-tabs-nav-wrap {
+    margin-bottom: 10px; /* Adds spacing below tabs */
+  }
+  
+  .tabButton {
+    color: #8B3A3A; /* Dark red text */
+    font-weight: bold;
+    padding: 8px 12px;
+  }
+  
+  .tabButton:hover {
+    color: white;
+    background-color: #8B3A3A;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .customNewReleaseTab {
+      font-size: 12px;
+    }
+    .book-description {
+      padding: 10px;
+    }
+  }
+  
+  
